@@ -1,0 +1,56 @@
+details {
+  position: fixed;
+  margin: 18px 10px 10px 14px;
+  top: 0;
+  left: 0;
+}
+
+summary {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  list-style-type: none;
+  writing-mode: vertical-lr;
+  padding: 4px 0 0 6px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 26px;
+}
+
+summary::before,
+summary::after {
+  position: static;
+  top: 0;
+  left: 0;
+}
+summary::before {
+  content: "";
+}
+summary::after {
+  content: "|||";
+  letter-spacing: 2px;
+}
+
+details[open] summary::before {
+  content: "X";
+}
+
+details[open] summary::after {
+  content: "";
+}
+
+.menu {
+  width: 100%;
+  
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    background-color: white;
+    border-radius: 8px;
+    
+    &__item {
+      margin-bottom: 8px;
+    }
+  }
+}

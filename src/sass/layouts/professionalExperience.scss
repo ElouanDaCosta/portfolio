@@ -1,0 +1,74 @@
+.professional-experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-secondary;
+  padding-bottom: 50px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      background-color: white;
+      margin: 8px;
+  
+      &__title {
+        margin: 16px 0 0 16px;
+  
+        h3 {
+          margin: 0;
+        }
+  
+      }
+  
+      &__date {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        margin: 8px 0 0 16px;
+        align-items: center;
+        justify-content: flex-start;
+  
+        &__date {
+          p {
+            margin: 0;
+          }
+        }
+  
+        span {
+          margin: 0;
+        }
+  
+        &__name {
+          p {
+            margin: 0;
+          }
+        }
+
+        @media screen and (min-width: 1024px) {
+          gap: 20px;
+        }
+      }
+      &__description {
+        margin: 16px 0 16px 16px;
+        p {
+          margin: 0;
+        }
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 45%;
+      }
+      
+      @media screen and (min-width: 1024px) {
+        width: 30%;
+      }
+    }
+  }
+}

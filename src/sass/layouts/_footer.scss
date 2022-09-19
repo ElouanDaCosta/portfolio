@@ -1,0 +1,37 @@
+.footer {
+  margin-top: 140px;
+  text-align: center;
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    gap: 10px;
+    padding: 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+
+    &__element {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 33%;
+      height: 50px;
+      a {
+        width: 33%;
+        height: 100px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
