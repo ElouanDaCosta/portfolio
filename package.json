@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "react-scripts build && serve -s build",
+    "dev": "react-scripts build && nodemon serve -s build",
     "sass": "sass --watch ./src/sass/main.scss:./src/styles/style.css --style=compressed"
   },
   "eslintConfig": {
@@ -38,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
