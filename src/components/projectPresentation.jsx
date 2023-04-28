@@ -4,7 +4,7 @@ function projectPresentation ({ projectImage, projectTitle, projectDescription, 
   return (
     <section className="projectPresentation">
       <div className="projectPresentation__image">
-        <img src={require(`../assets/${projectImage}`)} alt=""/>
+        <img src={require(projectImage)} alt=""/>
       </div>
       <div className="projectPresentation__text">
         <div className="projectPresentation__text__title">
