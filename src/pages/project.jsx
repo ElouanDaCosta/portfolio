@@ -11,6 +11,7 @@ class Project extends Component {
       projectImage: '',
       projectPresentation: '',
       projectKeywords: '',
+      projectKeywordsDate: '',
       projectExample: '',
       projectGithub: '',
     };
@@ -28,7 +29,7 @@ class Project extends Component {
         const urlParams = new URLSearchParams(window.location.search);
         const id = urlParams.get('id');
         const project = data.find(item => item.id === Number(id));
-        //console.log(project.project_title);
+        //console.log(project.project_keywords_date);
         if (project) {
           this.setState({
             projectTitle: project.project_title,
@@ -36,6 +37,7 @@ class Project extends Component {
             projectImage: project.project_image,
             projectPresentation: project.project_presentation,
             projectKeywords: project.project_keywords,
+            projectKeywordsDate: project.project_keywords_date,
             projectExample: project.project_example,
             projectGithub: project.project_github,
           });
@@ -56,7 +58,7 @@ class Project extends Component {
           </div>
           <div className="project-header__keywords">
             <div className="project-header__keywords__date">
-              <p>2020</p>
+              <p>{this.state.projectKeywordsDate}</p>
             </div>
             <div className="project-header__keywords__keywords">
               <p>{this.state.projectKeywords}</p>
@@ -72,7 +74,7 @@ class Project extends Component {
               <h2>{this.state.projectTitle}</h2>
             </div>
             <div className="projectPresentation__text__secondtitle">
-              <h3></h3>
+              <h3>{this.state.projectKeywordsDate}</h3>
             </div>
             <div className="projectPresentation__text__description">
               <p>{this.state.projectDescription}</p>
