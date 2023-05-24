@@ -7,11 +7,12 @@
 
 body {
   margin: 0;
+  background-color: $color-background;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: $color-tertiary;
   font-size: 16px;
 }
 

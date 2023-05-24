@@ -14,12 +14,23 @@
     flex-direction: column;
     height: 100%;
     text-align: center;
+    //color: $color-tertiary;
+
+    &__name {
+      color: $color-primary;
+    }
     
     &__title {
       width: 60%;
       margin-bottom: 20px;
       h1 {
         margin: 0;
+      }
+
+      &__highlight {
+        font-size: 22px;
+        font-weight: bolder;
+        color: $color-tertiary;
       }
 
       @media screen and (min-width:1024px) {
