@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./header";
-import Menu from "./menu";
 import ProfessionalExperience from "./professionalExperience";
 import Portfolio from "./portfolio";
 import Education from "./education";
