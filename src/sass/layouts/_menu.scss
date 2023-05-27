@@ -40,6 +40,12 @@
   align-self: flex-end;
   margin-right: 10px;
   &__list {
+    @for $i from 1 through $num-items {
+      &__item:nth-child(#{$i}) {
+        animation: slide-in $animation-duration ease-in-out forwards;
+        animation-delay: calc(#{$animation-delay} * (#{$i} - 1));
+      }
+    }
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -55,6 +61,7 @@
         color: $color-primary;
         margin-right: 6px;
       }
+      opacity: 0;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -76,4 +83,15 @@
   display: flex;
   align-self: flex-end;
   color: $color-primary;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
