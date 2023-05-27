@@ -1,56 +1,35 @@
-details {
-  position: fixed;
-  margin: 18px 10px 10px 14px;
-  top: 0;
-  left: 0;
-}
-
-summary {
-  background-color: white;
-  width: 40px;
-  height: 40px;
-  list-style-type: none;
-  writing-mode: vertical-lr;
-  padding: 4px 0 0 6px;
-  border-radius: 8px;
-  text-align: center;
-  font-size: 26px;
-}
-
-summary::before,
-summary::after {
-  position: static;
-  top: 0;
-  left: 0;
-}
-summary::before {
-  content: "";
-}
-summary::after {
-  content: "|||";
-  letter-spacing: 2px;
-}
-
-details[open] summary::before {
-  content: "X";
-}
-
-details[open] summary::after {
-  content: "";
-}
-
 .menu {
+  display: flex;
   width: 100%;
-  
+  margin: 20px 0 20px 0;
   &__list {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0 0 0;
-    background-color: white;
-    border-radius: 8px;
-    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+    margin: 0 20px 0 20px;
+    text-decoration: none;
+
     &__item {
-      margin-bottom: 8px;
+      span {
+        color: $color-primary;
+        margin-right: 6px;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: $color-secondary;
+      font-weight: 900;
+      font-size: $font-size-large;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $color-primary;
+      }
     }
   }
 }

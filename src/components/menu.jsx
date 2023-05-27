@@ -5,20 +5,14 @@ function Menu () {
   const navigate = useNavigate();
 
   return (
-    <details>
-      <summary></summary>
-      <nav className="menu">
-        <ul className="menu__list">
-          <li
-          onClick={() => navigate('/')}
-          className="menu__list__item">Home</li>
-          <li 
-          onClick={() => navigate('/project')}
-          className="menu__list__item">Work</li>
-          <li className="menu__list__item"><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </details>
+    <nav className="menu">
+      <ul className="menu__list">
+        <li className="menu__list__item" onClick={() => navigate('/')}><span>01.</span>About</li>
+        <li className="menu__list__item" onClick={() => navigate('/about')}><span>02.</span>Experience</li>
+        <li className="menu__list__item" onClick={() => navigate('/projects')}><span>03.</span>Work</li>
+        <li className="menu__list__item" onClick={() => navigate('/contact')}><span>04.</span>Contact</li>
+      </ul>
+    </nav>
   )
 }
 
