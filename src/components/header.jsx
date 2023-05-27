@@ -3,7 +3,7 @@ import Menu from "./menu";
 
 function Header ({ animation }) {
   return (
-    <header className="header" id="home">
+    <header className="header">
       <Menu />
       <section className="header__text">
         <div className="header__text__title">
