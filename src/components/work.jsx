@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
 
-function Portfolio() {
+function Work() {
   const navigate = useNavigate();
   return (
     <section className="portfolio" id="portfolio">
@@ -86,4 +86,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Work;

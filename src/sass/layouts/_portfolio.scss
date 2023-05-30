@@ -18,13 +18,12 @@
 
     &__item {
       display: flex;
-      flex-direction: column;
       gap: 8px;
       margin: 8px 8px 16px 8px;
       padding-bottom: 10px;
-      border-bottom: 1px solid #d3d3d3;
+      //border-bottom: 1px solid $color-tertiary;
       border-radius: 20px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      box-shadow: $color-primary 0px 5px 15px;
       transition: all 0.3s ease-in-out;
       overflow: hidden;
 
