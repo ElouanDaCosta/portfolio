@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./header";
 import ProfessionalExperience from "./professionalExperience";
-import Portfolio from "./portfolio";
+import Work from "./work";
 import Education from "./education";
 import Skills from "./skills";
 import Footer from "./footer";
@@ -11,7 +11,7 @@ function HomeBlock({ animation }) {
     <React.Fragment>
       <Header animation={animation} />
       <ProfessionalExperience />
-      <Portfolio />
+      <Work />
       <Education />
       <Skills />
       <Footer />
